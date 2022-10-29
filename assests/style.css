@@ -11,7 +11,7 @@ img {
 }
 
 .flex-container {
-    font-size: 20px;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,16 +21,15 @@ img {
 /* Responsive layout - makes a one column layout instead of a two-column layout */
 @media (max-width: 800px) {
   .flex-container {
+    font-size: medium;
     flex-direction: column;
     margin-inline: 2rem;
   }
-  h1,
-  form,
-  .title,
-  .logo,
-  .email,
-  p {
-    min-width: 100% - 42px;
+
+  button {
+    padding: 15px 0px;
+    width: calc(100%);
+    max-width: 392px;
   }
 }
 
@@ -61,6 +60,7 @@ p {
 }
 h1 {
   margin: 0rem;
+  display: inline-block;
 }
 button {
   background-color: hsl(223, 87%, 63%);
@@ -69,9 +69,9 @@ button {
   display: inline-block;
   border-radius: 30px;
   border: none;
-  margin: 0.5rem;
+  margin: 1rem 0rem;
   font-weight: 500;
-  box-shadow: 0px 0px 3px hsl(223, 87%, 63%);
+  box-shadow: 0px 0px 4px hsl(223, 87%, 63%);
 }
 
 button:hover {
@@ -94,7 +94,8 @@ button:hover {
   display: inline-flex;
   place-items: center;
   margin-inline: 0.3rem;
-  margin-bottom: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 .icon svg {
   max-height: 13px;
