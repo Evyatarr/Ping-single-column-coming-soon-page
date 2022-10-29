@@ -18,7 +18,6 @@ img {
   align-items: center;
 }
 
-/* Responsive layout - makes a one column layout instead of a two-column layout */
 @media (max-width: 800px) {
   .flex-container {
     font-size: medium;
@@ -30,6 +29,11 @@ img {
     padding: 15px 0px;
     width: calc(100%);
     max-width: 392px;
+  }
+}
+@media (min-width: 800px) {
+  .button {
+    margin-left: 0rem 1rem;
   }
 }
 
@@ -45,17 +49,19 @@ img {
 form {
   margin-top: 0.1rem;
   min-width: 100%;
+  margin-inline: 1rem;
 }
 .email {
   max-width: 350px;
   padding: 15px 20px;
   border-radius: 30px;
-  color: #c6d3f4;
+  color: #c6d3f4f7;
   border: 1px solid;
   text-align: left;
   width: calc(100% - 42px);
+
 }
-p {
+.description {
   margin-bottom: 2rem;
 }
 h1 {
@@ -95,7 +101,7 @@ button:hover {
   place-items: center;
   margin-inline: 0.3rem;
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 .icon svg {
   max-height: 13px;
