@@ -1,7 +1,6 @@
 body {
   text-align: center;
   font-family: "Libre Franklin", sans-serif;
-  font-size: 20px;
   color: hsl(209, 33%, 12%);
   overflow-x: clip;
 }
@@ -12,6 +11,7 @@ img {
 }
 
 .flex-container {
+    font-size: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
