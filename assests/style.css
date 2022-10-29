@@ -1,0 +1,109 @@
+body {
+  text-align: center;
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+  color: hsl(209, 33%, 12%);
+  overflow-x: clip;
+}
+
+svg,
+img {
+  width: 100%;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+    margin-inline: 2rem;
+  }
+  h1,
+  form,
+  .title,
+  .logo,
+  .email,
+  p {
+    min-height: 1rem;
+  }
+}
+
+.logo {
+  max-width: fit-content;
+  margin: 2rem;
+  margin-top: 4rem;
+}
+.title {
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+}
+form {
+  margin-top: 0.1rem;
+}
+.email {
+  max-width: 350px;
+  padding: 15px 20px;
+  border-radius: 30px;
+  color: #c6d3f4;
+  border: 1px solid;
+  text-align: left;
+  width: calc(100% - 42px);
+}
+p {
+  margin-bottom: 2rem;
+}
+h1 {
+  margin: 0rem;
+}
+button {
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+  padding: 15px 50px;
+  display: inline-block;
+  border-radius: 30px;
+  border: none;
+  margin: 0.5rem;
+  font-weight: 500;
+  box-shadow: 0px 0px 3px hsl(223, 87%, 63%);
+}
+
+button:hover {
+  background-color: #7195f5;
+  cursor: pointer;
+}
+.illustration {
+  max-width: 600px;
+  margin: 3rem;
+  margin-bottom: 5rem;
+}
+.icon {
+  max-width: 13px;
+  max-height: 13px;
+  fill: hsl(223, 87%, 63%);
+  border-radius: 100%;
+  padding: 7px;
+  border: 1px solid;
+  border-color: #c6d3f4;
+  display: inline-flex;
+  place-items: center;
+}
+.icon svg {
+  max-height: 13px;
+  min-width: 13px;
+}
+
+.attribution,
+.copyrights {
+  font-size: 11px;
+  text-align: center;
+  color: hsl(0, 0%, 59%);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
