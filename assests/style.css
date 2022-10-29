@@ -30,7 +30,7 @@ img {
   .logo,
   .email,
   p {
-    min-height: 1rem;
+    min-width: 100% - 42px;
   }
 }
 
@@ -45,6 +45,7 @@ img {
 }
 form {
   margin-top: 0.1rem;
+  min-width: 100%;
 }
 .email {
   max-width: 350px;
@@ -92,10 +93,18 @@ button:hover {
   border-color: #c6d3f4;
   display: inline-flex;
   place-items: center;
+  margin-inline: 0.3rem;
+  margin-bottom: 1rem;
 }
 .icon svg {
   max-height: 13px;
   min-width: 13px;
+}
+
+.icon:hover {
+  fill: white;
+  background-color: hsl(223, 87%, 63%);
+  
 }
 
 .attribution,
