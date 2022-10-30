@@ -52,13 +52,13 @@ form {
   margin-inline: 1rem;
 }
 .email {
-  max-width: 350px;
+  max-width: 370px;
   padding: 15px 20px;
   border-radius: 30px;
   color: #c6d3f4f7;
   border: 1px solid;
   text-align: left;
-  width: calc(100% - 42px);
+  width: calc(392px - 42px);
 }
 .description {
   margin-bottom: 2rem;
@@ -78,6 +78,10 @@ button {
   font-weight: 500;
   box-shadow: 0px 0px 4px hsl(223, 87%, 63%);
 }
+.input-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+}
 
 button:hover {
   background-color: #7195f5;
@@ -89,7 +93,9 @@ button:hover {
   font-weight: 300;
   font-style: italic;
   font-size: smaller;
-  margin: 0;
+  display: contents;
+  font-size: 12px;
+  /* margin: 1rem; */
 }
 .illustration {
   max-width: 600px;

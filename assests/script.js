@@ -4,13 +4,13 @@ function validateForm() {
   const formstyle = document.getElementById("form");
   let x = document.forms["myForm"]["email-form"].value;
   if (x == "") {
-    document.getElementById("form").style.color = "#c6d3f4f7";
+    formstyle.style.color = "hsl(354, 100%, 66%)";
     element.innerHTML = "Whoops! It looks like you forgot to add your email";
     return false;
   } else if (x.match(email_format)) {
     return true;
   } else {
-    formstyle.style.color = "#c6d3f4f7";
+    formstyle.style.color = "hsl(354, 100%, 66%)";
     element.innerHTML = "Please provide a valid email address";
     return false;
   }
