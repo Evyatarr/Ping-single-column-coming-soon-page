@@ -1,22 +1,17 @@
-// function ValidateEmail(form) {
-//   const email_format = /^w+([.-]?w+)*@w+([.-]?w+)*(.w{2,3})+$/;
-//   if (!email_format.value.match(email_format)) {
-//     alert( "Please provide a valid email address");
-//   }
-
-// }
-
-
-function ValidateEmail(form) 
-{
- if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(myForm.emailAddr.value))
-  {
-    return (true)
+function validateForm() {
+  const email_format = "[a-z0-9]+@[a-z]+.[a-z]{2,3}";
+  const element = document.getElementById("error");
+  const formstyle = document.getElementById("form");
+  let x = document.forms["myForm"]["email-form"].value;
+  if (x == "") {
+    document.getElementById("form").style.color = "#c6d3f4f7";
+    element.innerHTML = "Whoops! It looks like you forgot to add your email";
+    return false;
+  } else if (x.match(email_format)) {
+    return true;
+  } else {
+    formstyle.style.color = "#c6d3f4f7";
+    element.innerHTML = "Please provide a valid email address";
+    return false;
   }
-    alert("You have entered an invalid email address!")
-    return (false)
-
-
-
-    if (input= )
 }

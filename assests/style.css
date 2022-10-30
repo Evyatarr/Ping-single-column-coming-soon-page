@@ -59,7 +59,6 @@ form {
   border: 1px solid;
   text-align: left;
   width: calc(100% - 42px);
-
 }
 .description {
   margin-bottom: 2rem;
@@ -83,6 +82,14 @@ button {
 button:hover {
   background-color: #7195f5;
   cursor: pointer;
+}
+
+#error {
+  color: hsl(354, 100%, 66%);
+  font-weight: 300;
+  font-style: italic;
+  font-size: smaller;
+  margin: 0;
 }
 .illustration {
   max-width: 600px;
